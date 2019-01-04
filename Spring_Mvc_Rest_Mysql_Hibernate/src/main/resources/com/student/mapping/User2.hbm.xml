@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+   <class name="com.student.pojo.User" table="UserRegister">
+   
+      <id name="id" type="int" column="Id">
+            <generator class="increment" />
+        </id>
+      
+      <property name="firstName" column="Firstname"> </property>
+      
+       <property name="lastName" column="Lastname"></property>
+      
+      <property name="dob"  column="Dob" type="date"></property>
+       <property name="email" column="Email"></property>
+       
+       
+       
+   </class>
+</hibernate-mapping>
